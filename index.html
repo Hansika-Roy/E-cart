@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="/logo.png" alt="logo">
+      </div>
+
+
+      <div class="links">
+        <ul>
+          <li class="subMenu">
+            <img src="/cart.png" alt="cart">
+            <div id="cart">
+              <table id="listCart">
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!--Cart items will come here from java script  -->
+                </tbody>
+
+              </table>
+
+              <a href="#" id="emptyCart">Empty Cart</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="listCourses">
+    <h1 style="text-align: center;">Online Courses</h1>
+
+    <div class="courseContainer">
+      <div class="courseCard">
+        <img src="/guitar.jpeg" alt="">
+        <div class="infoCard">
+          <h4>Guitar Course (Beginners)</h4>
+          <p class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </p>
+          <p>
+            <span class="mrp">₹ 10,000</span>
+            <span class="discounted">₹ 8,500</span>
+          </p>
+          <a href="" class="addCart" data-id="1">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="courseCard">
+        <img src="/computer.jpeg" alt="">
+        <div class="infoCard">
+          <h4>Web Development(Frontend)</h4>
+          <p class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </p>
+          <p>
+            <span class="mrp">₹ 10,000</span>
+            <span class="discounted">₹ 8,500</span>
+          </p>
+          <a href="" class="addCart" data-id="2">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="courseCard">
+        <img src="/plants.jpeg" alt="">
+        <div class="infoCard">
+          <h4>Nursery Course (Beginners)</h4>
+          <p class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </p>
+          <p>
+            <span class="mrp">₹ 10,000</span>
+            <span class="discounted">₹ 8,500</span>
+          </p>
+          <a href="" class="addCart" data-id="3">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="courseCard">
+        <img src="/plants.jpeg" alt="">
+        <div class="infoCard">
+          <h4>Nursery Course (Advanced)</h4>
+          <p class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </p>
+          <p>
+            <span class="mrp">₹ 10,000</span>
+            <span class="discounted">₹ 8,500</span>
+          </p>
+          <a href="" class="addCart" data-id="4">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="courseCard">
+        <img src="/remedies.jpeg" alt="">
+        <div class="infoCard">
+          <h4>Home remidies(Advanced)</h4>
+          <p class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </p>
+          <p>
+            <span class="mrp">₹ 10,000</span>
+            <span class="discounted">₹ 8,500</span>
+          </p>
+          <a href="" class="addCart" data-id="5">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="courseCard">
+        <img src="/computer.jpeg" alt="">
+        <div class="infoCard">
+          <h4>Web Development(Backend)</h4>
+          <p class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </p>
+          <p>
+            <span class="mrp">₹ 12,000</span>
+            <span class="discounted">₹ 10,500</span>
+          </p>
+          <a href="" class="addCart" data-id="6">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="courseCard">
+        <img src="/remedies.jpeg" alt="">
+        <div class="infoCard">
+          <h4>Home remidies(Beginners)</h4>
+          <p class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </p>
+          <p>
+            <span class="mrp">₹ 12,000</span>
+            <span class="discounted">₹ 10,500</span>
+          </p>
+          <a href="" class="addCart" data-id="7">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="courseCard">
+        <img src="/guitar.jpeg" alt="">
+        <div class="infoCard">
+          <h4>Drums Course (Advanced)</h4>
+          <p class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </p>
+          <p>
+            <span class="mrp">₹ 12,000</span>
+            <span class="discounted">₹ 10,500</span>
+          </p>
+          <a href="" class="addCart" data-id="8">Add to Cart</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="/script.js"></script>
+</body>
+
+</html>

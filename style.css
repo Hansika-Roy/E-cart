@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: yellow;
+}
+
+header{
+  display: flex;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: white;
+}
+
+.logo img{
+  height: 70px;
+  width: 70px;
+}
+
+.links ul{
+  list-style: none;
+}
+
+.links ul li img{
+  margin-top: 25px;
+}
+
+#cart{
+  display: none;
+}
+
+.subMenu:hover #cart{
+  display: block;
+  position: absolute;
+  height: 500px;
+  overflow-y: scroll;
+  min-width: 300px;
+  background-color: orange;
+}
+
+#listCart{
+  display: flex;
+  justify-content: center;
+}
+
+#listCart thead{
+  display: flex;
+  width: 100%;
+}
+
+#listCart thead tr{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+#emptyCart{
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+table{
+  display: flex;
+  flex-direction: column;
+}
+
+tbody tr{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+tbody tr td{
+  text-align: center;
+  width: 100px;
+  padding: 5px;
+}
+
+tbody tr td img{
+ width: 100%;
+ text-align: center;
+}
+
+.cross{
+  width: 50px;
+}
+
+.cross a{
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  display: block;
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+  border-radius: 50%;
+}
+
+.courseCard{
+  background-color: orange;
+  height: 300px;
+  width: 265px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.courseContainer{
+  display: flex;
+  flex-flow: wrap;
+  width: 70%;
+}
+
+.mrp{
+  text-decoration: line-through red;
+}
+
+.discounted{
+  float: right;
+  font-weight: bold;
+}
+
+.addCart{
+  text-decoration: none;
+  display: block;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#listCourses{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
